@@ -83,7 +83,7 @@ Efter flitigt parprogrammerande på ett antal företag har jag märkt att vissa 
 
 
 
-[![glada_parprogrammerare](http://www.syson.se/wp-content/uploads/2013/09/parprogrammering3-e1379079017991.png)](http://www.syson.se/wp-content/uploads/2013/09/parprogrammering3-e1379079017991.png)
+[![glada_parprogrammerare]({{ site.baseurl }}/images/wp_import/parprogrammering3-e1379079017991.png)]({{ site.baseurl }}/images/wp_import/parprogrammering3-e1379079017991.png)
 
 /Soroush
 
