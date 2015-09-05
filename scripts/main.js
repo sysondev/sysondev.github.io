@@ -15,7 +15,14 @@ script.src = 'https://api.instagram.com/v1/users/1805388781/media/recent/?client
 
 document.getElementsByTagName('head')[0].appendChild(script);
 
-function handler(data)
+function handler(response)
 {
-    console.log(data);
+    response.data.forEach(function(post){
+        var imageContainer = document.createElement('div');
+        imageContainer.classList.add('instagram_post');
+        var image = document.createElement('img');
+        image.setAttribute('src', post.images.standard_resolution.url);
+        imageContainer.appendChild(image);
+        document.getElementsByClassName('instagram_posts')[0].appendChild(imageContainer);
+    })
 }
