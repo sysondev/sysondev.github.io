@@ -1,10 +1,5 @@
 ready(function(){
     var nav = responsiveNav('.nav-collapse');
-
-    getRequest('https://api.instagram.com/v1/users/1805388781/media/recent/?client_id=6f84264e1db54f31b62a2a823557f7f3',
-    function() {
-        console.log(this.response);
-    })
 });
 
 function ready(fn) {
@@ -15,9 +10,12 @@ function ready(fn) {
     }
 }
 
-function getRequest(url, callback) {
-    var oReq = new XMLHttpRequest();
-    oReq.addEventListener('load', callback);
-    oReq.open('GET', url, true);
-    oReq.send();
+var script = document.createElement('script');
+script.src = 'https://api.instagram.com/v1/users/1805388781/media/recent/?client_id=6f84264e1db54f31b62a2a823557f7f3&callback=handler';
+
+document.getElementsByTagName('head')[0].appendChild(script);
+
+function handler(data)
+{
+    console.log(data);
 }
