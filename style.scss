@@ -8,7 +8,8 @@
 @import "reset";
 @import "variables";
 @import "responsive-nav";
-@import 'jeet/jeet';
+@import "jeet/jeet";
+
 // Syntax highlighting @import is at the bottom of this file
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .logo {
@@ -40,6 +41,14 @@ img {
   @include mobile {
     display: block;
   }
+}
+
+.container {
+  @include j-center(960px);
+}
+
+.team_member {
+  @include j-column(1/3);
 }
 
 
