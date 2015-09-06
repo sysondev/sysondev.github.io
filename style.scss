@@ -44,19 +44,31 @@ img {
 }
 
 .container {
-  @include j-center(960px);
+  @include j-center(960px)
 }
 
 .team_member {
   @include j-column(1/3, $cycle: 3);
+
+  @include mobile {
+    @include j-column(1/1);
+  }
 }
 
 .post {
   @include j-column(1/3, $cycle: 3);
+
+  @include mobile {
+    @include j-column(1/1);
+  }
 }
 
 .instagram_post {
   @include j-column(1/4, $cycle: 4);
+
+  @include mobile {
+    @include j-column(1/2, $cycle: 2);
+  }
 }
 
 
