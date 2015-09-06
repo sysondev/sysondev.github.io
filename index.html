@@ -9,7 +9,9 @@ layout: default
       <h1>{{ team_member.name }}</h1>
       <img src="images/team_members/{{team_member.image}}">
       <p>"{{team_member.quote}}"</p>
-      <a href="#" class="button button--wayra">Visa Profil</a>
+      {% if team_member.cv_link %}
+        <a href="{{team_member.cv_link}}" target="_blank" class="button button--wayra">Visa Profil</a>
+      {% endif %}
     </div>
 
   {% endfor %}
