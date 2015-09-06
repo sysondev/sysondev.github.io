@@ -33,6 +33,16 @@ img {
   max-width: 100%;
 }
 
+.border {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: .5em;
+  background: $turquoise;
+}
+
 .logo {
   text-align: center;
   color: $turquoise;
@@ -51,7 +61,7 @@ img {
   overflow: hidden;
   display: none;
   background: $turquoise url("../images/hamburger.gif") no-repeat 50% 33%;
-  @include desktop {
+  @include mobile {
     display: block;
   }
 }
