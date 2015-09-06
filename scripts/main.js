@@ -17,7 +17,6 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 function handler(response)
 {
-    console.log(response);
     response.data.forEach(function(post, i){
         if(i >= 15) {
             return;
