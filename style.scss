@@ -33,6 +33,12 @@ img {
   max-width: 100%;
 }
 
+footer {
+  @include j-column();
+  height: 2em;
+  background: $turquoise;
+}
+
 .border {
   position: absolute;
   z-index: 2;
