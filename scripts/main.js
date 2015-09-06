@@ -17,7 +17,10 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 function handler(response)
 {
-    response.data.forEach(function(post){
+    response.data.forEach(function(post, i){
+        if(i >= 15) {
+            return;
+        }
         var imageContainer = document.createElement('div');
         imageContainer.classList.add('instagram_post');
         var image = document.createElement('img');
