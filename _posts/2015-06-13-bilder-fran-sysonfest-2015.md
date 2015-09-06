@@ -6,6 +6,7 @@ layout: post
 slug: bilder-fran-sysonfest-2015
 title: 'Bilder från #sysonfest'
 wordpress_id: 3834
+featured_image: wp_import/IMG_6248.jpg
 ---
 
 Kul, det var det!

@@ -21,10 +21,10 @@ layout: default
   {% for post in site.posts limit: 3 %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
       <div class="entry">
-        {{ post.excerpt }}
+          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+          {% if post.featured_image %}<img src="{{site.baseurl}}/images/{{post.featured_image}}">{% endif %}
+          {{ post.excerpt | truncatewords: 30}}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}">Läs Mer</a>

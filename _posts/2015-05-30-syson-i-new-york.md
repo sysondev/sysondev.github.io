@@ -6,6 +6,7 @@ layout: post
 slug: syson-i-new-york
 title: Syson i New York
 wordpress_id: 3787
+featured_image: wp_import/IMG_6038.jpg
 ---
 
 Kring valborg korsade Syson-teamet atlanten för att besöka New York. Under fyra dagar förkovrade vi oss i allt som staden hade att erbjuda; vi garvade på komediklubben Comedy Cellar i West Village, åt oss proppmätta på matmarknad i Williamsburg, dansade oss svettiga på 20-tals inspirerad klubb och promenerade runt i ett soligt Central Park. Till New York längtade vi tillbaka sekunden vi satte oss på flygplanet hem.
