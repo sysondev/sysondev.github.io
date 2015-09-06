@@ -50,26 +50,45 @@ img {
   letter-spacing: 2px;
 }
 
-
-.nav-toggle {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  top: -18px;
-  right: 0;
-  text-indent: -9999px;
-  overflow: hidden;
-  display: none;
-  background: $turquoise url("../images/hamburger.gif") no-repeat 50% 33%;
-  @include mobile {
-    display: block;
+.nav-icon {
+  display: inline-block;
+  padding: 5px;
+	position: absolute;
+	right: 15px;
+	top: 9px;
+  span {
+  	display: block;
+  	height: 4px;
+    width: 30px;
+  	margin: 5px 0;
+  	background: $green-sea;
+  }
+  @include desktop {
+    display: none;
   }
 }
-
+.nav-collapse {
+  display: none;
+  text-align: center;
+}
+.nav-item {
+  padding: 10px 0;
+}
+.global-header {
+  background-color: white;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include desktop {
+    position: relative;
+  }
+}
 .container {
   //@include j-center(null, percentage($jeet-gutter/100));
-  @include j-column(22/24, 1/24);
-
+  //@include j-column(22/24, 1/24);
+  margin: 55px 10px 0 10px;
   @include desktop {
     @include j-center(960px);
   }

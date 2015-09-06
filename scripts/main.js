@@ -1,5 +1,5 @@
 ready(function(){
-    var nav = responsiveNav('.nav-collapse');
+    //var nav = responsiveNav('.nav-collapse');
 });
 
 function ready(fn) {
@@ -24,5 +24,5 @@ function handler(response)
         image.setAttribute('src', post.images.standard_resolution.url);
         imageContainer.appendChild(image);
         document.getElementsByClassName('instagram_posts')[0].appendChild(imageContainer);
-    })
+    });
 }

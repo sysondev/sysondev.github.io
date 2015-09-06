@@ -19,26 +19,36 @@
     <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="border"></div>
-    <div class="container">
-        <div class="logo">syson.</div>
-        <nav class="nav-collapse">
-          <ul>
-              <!--<li><a href="{{ site.baseurl }}/">Home</a></li>-->
-              <!--<li><a href="{{ site.baseurl }}/">About</a></li>-->
-              <!--<li><a href="{{ site.baseurl }}/">Projects</a></li>-->
-              <!--<li><a href="{{ site.baseurl }}/kontakt">Contact!</a></li>-->
-          </ul>
-        </nav>
 
+    <header class="global-header">
+      <div class="border"></div>
+      <div class="logo">syson.</div>
+      <div class="nav-icon js-slide-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav-collapse js-slide-toggle">
+        <ul>
+            <li class="nav-item"><a href="{{ site.baseurl }}/">Home</a></li>
+            <li class="nav-item"><a href="{{ site.baseurl }}/">About</a></li>
+            <li class="nav-item"><a href="{{ site.baseurl }}/">Projects</a></li>
+            <li class="nav-item"><a href="{{ site.baseurl }}/kontakt">Contact!</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
         <div id="main" role="main">
           {{ content }}
         </div>
     </div>
+    <footer>
+      <h1>Footer</h1>
+    </footer>
 
     {% include analytics.html %}
-    <script src="{{ site.baseurl }}/scripts/responsive-nav.min.js"></script>
     <script src="{{ site.baseurl }}/scripts/main.js"></script>
+    <script src="{{ site.baseurl }}/scripts/slidetoggle.js"></script>
 
   </body>
 </html>
