@@ -17,8 +17,13 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 function handler(response)
 {
-    response.data.forEach(function(post){
-        var imageContainer = document.createElement('div');
+    response.data.forEach(function(post, i){
+        if(i >= 15) {
+            return;
+        }
+        var imageContainer = document.createElement('a');
+        imageContainer.setAttribute('href', post.link);
+        imageContainer.setAttribute('target', '_blank');
         imageContainer.classList.add('instagram_post');
         var image = document.createElement('img');
         image.setAttribute('src', post.images.standard_resolution.url);
