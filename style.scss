@@ -52,8 +52,11 @@ footer {
 .logo {
   text-align: center;
   color: $turquoise;
-  font-size: 100px;
+  font-size: 35px;
   letter-spacing: 2px;
+  @include desktop {
+    font-size: 100px;
+  }
 }
 
 .nav-icon {
@@ -67,7 +70,7 @@ footer {
   	height: 4px;
     width: 30px;
   	margin: 5px 0;
-  	background: $green-sea;
+  	background: $turquoise;
   }
   @include desktop {
     display: none;
