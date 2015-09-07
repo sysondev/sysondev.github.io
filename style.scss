@@ -103,7 +103,7 @@ footer {
   }
 }
 
-.team_member {
+.team-member {
   margin-bottom: 20px;
   @include j-column();
 
@@ -151,7 +151,7 @@ footer {
   }
 }
 
-.instagram_post {
+.instagram-post {
   margin-bottom: percentage($jeet-gutter/100);
 
   @include j-column(1/2, $cycle: 2);

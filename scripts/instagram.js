@@ -12,10 +12,10 @@ function handler(response)
         var imageContainer = document.createElement('a');
         imageContainer.setAttribute('href', post.link);
         imageContainer.setAttribute('target', '_blank');
-        imageContainer.classList.add('instagram_post');
+        imageContainer.classList.add('instagram-post');
         var image = document.createElement('img');
         image.setAttribute('src', post.images.standard_resolution.url);
         imageContainer.appendChild(image);
-        document.getElementsByClassName('instagram_posts')[0].appendChild(imageContainer);
+        document.getElementsByClassName('instagram-posts')[0].appendChild(imageContainer);
     });
 }
