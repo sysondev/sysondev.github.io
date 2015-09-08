@@ -46,8 +46,13 @@ img {
 
 footer {
   @include j-column();
-  height: 2em;
-  background: $turquoise;
+  background: $clouds;
+  padding: 20px 0;
+
+  .social-icons-container {
+    text-align: center;
+  }
+
 }
 
 .border {
