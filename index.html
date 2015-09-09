@@ -7,7 +7,9 @@ layout: default
 
     <div class="team-member">
         <div class="image-container">
-            <img src="images/team_members/{{team_member.image}}">
+            <div class="image-placeholder">
+                <img src="images/team_members/{{team_member.image}}">
+            </div>
         </div>
       <h1 class="name">{{ team_member.name }}</h1>
       {% if team_member.cv_link %}
