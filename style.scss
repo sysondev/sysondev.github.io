@@ -23,6 +23,7 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 20px;
   line-height: 1.4;
+  color: $midnight-blue;
 }
 
 h1 {
@@ -33,6 +34,18 @@ hr {
   @include j-column();
   border: 0;
   border-top: 1px solid $clouds;
+}
+
+a {
+  text-decoration: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .divider {

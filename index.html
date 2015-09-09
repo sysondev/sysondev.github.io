@@ -33,7 +33,7 @@ layout: default
             <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{site.baseurl}}/images/{{post.featured_image}}"></a>
           {% endif %}
           {{ post.excerpt | strip_html | truncatewords: 20}}
-          <a href="{{ site.baseurl }}{{ post.url }}">Läs Mer</a>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="underline">Läs Mer</a>
       </div>
 
     </article>
