@@ -61,9 +61,25 @@ footer {
   @include j-column();
   background: $clouds;
   padding: 20px 0;
+  font-size: 16px;
+
+  .container {
+    margin-top: 0;
+  }
 
   .social-icons-container {
     text-align: center;
+  }
+
+  @include desktop {
+    .social-icons-container {
+      @include j-column(1/2);
+      text-align: inherit;
+    }
+
+    .contact-info {
+      @include j-column(1/2)
+    }
   }
 
 }
