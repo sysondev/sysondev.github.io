@@ -6,6 +6,7 @@ layout: post
 slug: syson-valkomnar-daniel-wolmerud
 title: Syson välkomnar Daniel Wolmerud
 wordpress_id: 3684
+featured_image: wp_import/IMG_6300-e1398423494517.jpg
 ---
 
 Innan påsk hade vi förmånen att hälsa vår vän och numera kollega Daniel Wolmerud välkommen till Syson.

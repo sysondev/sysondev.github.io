@@ -6,6 +6,7 @@ layout: post
 slug: syson-i-prag
 title: Syson On Tour besöker Prag
 wordpress_id: 3721
+featured_image: wp_import/IMG_5023.jpg
 ---
 
 Kullerstensgator, tågfraktad öl, fina vyer och fifflande taxichaufförer. Prag är en vacker stad.

@@ -6,6 +6,7 @@ layout: post
 slug: teamet-vaxer-valkommen-katrine-johansson
 title: Teamet växer, välkommen Katrine Johansson!
 wordpress_id: 3771
+featured_image: wp_import/Katrin-ny-e1417954586295.jpg
 ---
 
 Katrine är en driven systemtestare som jobbat med bland annat utforskande testning, testautomatisering och testprocesser hos företag som Electronic Arts, Pricer och Quickspin.

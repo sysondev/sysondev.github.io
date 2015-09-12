@@ -6,6 +6,7 @@ layout: post
 slug: valkommen-joakim-gordillo
 title: Välkommen Joakim Gordillo!
 wordpress_id: 3634
+featured_image: wp_import/joakim_ljus1-e1394206229272.jpg
 ---
 
 Joakim Gordillo har fem års erfarenhet av systemutveckling och kommer närmast från Comviq där han haft rollen som Lead frontendutvecklare.

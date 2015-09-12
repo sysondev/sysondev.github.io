@@ -6,6 +6,7 @@ layout: post
 slug: intervju-med-nya-kollegan-david-skog
 title: Intervju med nya kollegan David Skog
 wordpress_id: 3706
+featured_image: wp_import/davidskog-e1404478587522.jpg
 ---
 
 

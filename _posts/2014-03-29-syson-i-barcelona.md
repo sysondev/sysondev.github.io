@@ -6,6 +6,7 @@ layout: post
 slug: syson-i-barcelona
 title: Syson i Barcelona
 wordpress_id: 3647
+featured_image: wp_import/IMG_2879.jpg
 ---
 
 För en vecka sedan begav sig den fem man starka Syson-skaran söderut mot Spanien och Barcelona. Under en långhelg snackade vi om framtiden och förstärkte vår teamkänsla. Vi turistade, vi åt en hel del tapas och smuttade på en och annan kanna Sangria på La Rambla.

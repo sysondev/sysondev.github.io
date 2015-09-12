@@ -6,6 +6,7 @@ layout: post
 slug: syson-vaxer-och-valkomnar-patrick-thomsson
 title: Syson växer och välkomnar Patrick Thomsson!
 wordpress_id: 3599
+featured_image: wp_import/patrick_ljus.jpg
 ---
 
 

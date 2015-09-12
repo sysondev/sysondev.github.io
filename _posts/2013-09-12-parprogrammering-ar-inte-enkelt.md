@@ -6,6 +6,7 @@ layout: post
 slug: parprogrammering-ar-inte-enkelt
 title: Parprogrammering är inte enkelt
 wordpress_id: 3466
+featured_image: wp_import/parprogrammering3-e1379079017991.png
 ---
 
 Parprogrammering är ett redskap för förbättrad effektivitet i utvecklingsteam. När man talar om effektivitetshöjande processer nämns ofta parprogrammering tillsammans med ”Testdriven utveckling”, ”Continuous integration” och ”Krossfunktionella team”, som det har skrivits ett otal böcker om. Men parprogrammering finns det fortfarande relativt få tips om i litteraturen. Och trots att de som förespråkar parprogrammeringen är många, är dess utövare ganska få. Varför är det så?
