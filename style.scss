@@ -145,13 +145,15 @@ footer {
 }
 
 .container {
-  margin-top: 20px;
   @include j-column(22/24, 1/24);
   @include desktop {
     @include j-center(960px);
   }
 }
 
+.team-members {
+  margin-top: 20px;
+}
 .team-member {
   margin-bottom: 20px;
   @include j-column();
