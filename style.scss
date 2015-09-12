@@ -9,7 +9,6 @@
 @import "variables";
 @import "responsive-nav";
 @import "jeet/jeet";
-
 // Syntax highlighting @import is at the bottom of this file
 
 /* Uncomment the row below to help you when developing the site.
@@ -119,7 +118,34 @@ footer {
   }
 }
 
+.landing {
+  background-image: url('images/IMG_5648.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.landing-text {
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  @include desktop {
+    top: 30%;
+  }
+}
+
+.global-header {
+  opacity: 1;
+}
+
 .container {
+  margin-top: 20px;
   @include j-column(22/24, 1/24);
   @include desktop {
     @include j-center(960px);
