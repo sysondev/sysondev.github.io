@@ -1,5 +1,4 @@
 ready(function(){
-    //var nav = responsiveNav('.nav-collapse');
 });
 
 function ready(fn) {
