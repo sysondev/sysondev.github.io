@@ -171,6 +171,14 @@ footer {
 
 }
 
+.team-page {
+
+  iframe {
+    height: 5000px;
+    width: 100%;
+  }
+}
+
 .posts {
   @include j-column();
 
