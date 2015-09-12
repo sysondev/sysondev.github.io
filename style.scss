@@ -72,12 +72,13 @@ footer {
   padding: 20px 0;
   font-size: 16px;
 
-  .container {
-    margin-top: 0;
-  }
-
   .social-icons-container {
     text-align: center;
+  }
+
+  .container:last-child {
+    //workaround due to lack of understanding of how this should be handled in jeet
+    margin-right: auto;
   }
 
   @include desktop {
@@ -119,9 +120,7 @@ footer {
 }
 
 .container {
-  //@include j-center(null, percentage($jeet-gutter/100));
-  //@include j-column(22/24, 1/24);
-  margin: 20px 10px 0 10px;
+  @include j-column(22/24, 1/24);
   @include desktop {
     @include j-center(960px);
   }
