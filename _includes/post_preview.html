@@ -1,0 +1,13 @@
+<article class="post">
+
+    <div class="entry">
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <p>{% include date.html %}</p>
+        {% if post.featured_image %}
+        <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{site.baseurl}}/images/{{post.featured_image}}"></a>
+        {% endif %}
+        {{ post.excerpt | strip_html | truncatewords: 20}}
+        <a href="{{ site.baseurl }}{{ post.url }}" class="underline">Läs Mer</a>
+    </div>
+
+</article>
