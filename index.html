@@ -24,9 +24,10 @@ layout: default
 <hr class="divider">
 
 <div class="posts">
-  {% for post in site.posts limit: 3 %}
+    {% for post in site.posts limit: 3 %}
         {% include post_preview.html %}
     {% endfor %}
+    <a class="archive-link" href="{{ site.baseurl }}/arkiv/">Läs fler nyheter</a>
 </div>
 
 <hr class="divider">
