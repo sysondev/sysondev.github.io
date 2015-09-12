@@ -25,19 +25,8 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts limit: 3 %}
-    <article class="post">
-
-      <div class="entry">
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-          {% if post.featured_image %}
-            <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{site.baseurl}}/images/{{post.featured_image}}"></a>
-          {% endif %}
-          {{ post.excerpt | strip_html | truncatewords: 20}}
-          <a href="{{ site.baseurl }}{{ post.url }}" class="underline">Läs Mer</a>
-      </div>
-
-    </article>
-  {% endfor %}
+        {% include post_preview.html %}
+    {% endfor %}
 </div>
 
 <hr class="divider">

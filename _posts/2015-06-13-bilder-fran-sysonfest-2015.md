@@ -4,7 +4,7 @@ comments: false
 date: 2015-06-13 10:19:31+00:00
 layout: post
 slug: bilder-fran-sysonfest-2015
-title: 'Bilder från #sysonfest'
+title: '#sysonfest 2015'
 wordpress_id: 3834
 featured_image: wp_import/IMG_6248.jpg
 ---
