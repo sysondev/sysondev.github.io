@@ -202,6 +202,7 @@ footer {
 .team-page {
 
   iframe {
+    @include j-center(550px);
     height: 7000px;
     width: 100%;
   }
