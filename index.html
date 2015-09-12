@@ -3,12 +3,12 @@ layout: default
 ---
 
 <div class="team_members">
-  {% for team_member in site.team_members reversed %}
+  {% for team_member in site.team reversed %}
 
     <div class="team-member">
         <div class="image-container">
             <div class="image-placeholder">
-                <img src="images/team_members/{{team_member.image}}">
+                <img src="images/team/{{team_member.image}}">
             </div>
         </div>
       <h1 class="name">{{ team_member.name }}</h1>
