@@ -34,7 +34,13 @@ $georgia: Georgia, serif;
 }
 
 @mixin desktop {
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 640px) and (max-width: 1024px) {
     @content;
   }
 }
