@@ -22,7 +22,7 @@ layout: default
         </div>
       <h1 class="name">{{ team_member.name }}</h1>
       {% if team_member.cv_link %}
-        <a href="{{team_member.permalink}}" class="button button--wayra">Visa Profil</a>
+        <a href="{{team_member.cv_link}}" target="_blank" class="button button--wayra">Visa Profil</a>
       {% endif %}
       <p class="quote">"{{team_member.quote}}"</p>
     </div>
