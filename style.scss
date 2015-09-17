@@ -108,6 +108,8 @@ footer {
   color: $turquoise;
   font-size: 50px;
   letter-spacing: 2px;
+  margin-bottom: 20px;
+
   @include desktop {
     font-size: 70px;
   }
