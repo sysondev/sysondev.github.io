@@ -1,15 +1,18 @@
 ---
 layout: default
 ---
-<div class="landing">
-  <header class="global-header">
-    <div class="border"></div>
-    <div class="logo"><a href="{{ site.baseurl }}/">syson.</a></div>
-  </header>
-  <p class="landing-text">
-      Om ekonomisk frihet, gemenskap och öppenhet är ord som tilltalar dig så har du hittat rätt. Våran stjärntrupp består av ...
-  </p>
-</div>
+
+{% include header.html %}
+
+<!--<div class="landing">-->
+  <!--<header class="global-header">-->
+    <!--<div class="border"></div>-->
+    <!--<div class="logo"><a href="{{ site.baseurl }}/">syson.</a></div>-->
+  <!--</header>-->
+  <!--<p class="landing-text">-->
+      <!--Om ekonomisk frihet, gemenskap och öppenhet är ord som tilltalar dig så har du hittat rätt. Våran stjärntrupp består av ...-->
+  <!--</p>-->
+<!--</div>-->
 
 <div class="team_members">
   {% for team_member in site.team reversed %}
