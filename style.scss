@@ -80,6 +80,9 @@ footer {
     margin-right: auto;
   }
 
+  .contact-info {
+    text-align: center;
+  }
   @include desktop {
     .social-icons-container {
       @include j-column(1/2);
@@ -87,6 +90,7 @@ footer {
     }
 
     .contact-info {
+      text-align: left;
       @include j-column(1/2)
     }
   }
