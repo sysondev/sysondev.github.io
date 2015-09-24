@@ -153,6 +153,14 @@ footer {
   }
 }
 
+.company-description {
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: $clouds;
+
+  @include j-column();
+}
+
 .team-members {
   margin-top: 20px;
 }
