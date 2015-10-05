@@ -8,8 +8,8 @@ title: Hej Magnus!
 featured_image: magnus_wide.jpg
 ---
 
-Magnus blir det senaste tillskottet till Sysons team.
-Förutom att vara en otroligt trevlig prick (och våghalsig, jag menar - GLIDFLYG?!) är Magnus en grym utvecklare med
+Magnus Linell blir det senaste tillskottet till Sysons team.
+Förutom att vara en otroligt trevlig prick (och våghalsig, jag menar - SKÄRMFLYG?!) är Magnus en grym utvecklare med
 mångårig erfarenhet inom bla bank & finans.
 
 Vi ställde honom tre snabba frågor:
