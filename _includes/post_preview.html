@@ -2,7 +2,7 @@
 
     <div class="entry">
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-        <p>{% include date.html %}</p>
+        <p class="entry-date">{% include date.html %}</p>
         {% if post.featured_image %}
         <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{site.baseurl}}/images/{{post.featured_image}}"></a>
         {% endif %}

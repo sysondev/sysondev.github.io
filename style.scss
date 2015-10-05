@@ -31,7 +31,7 @@ h1 {
 hr {
   @include j-column();
   border: 0;
-  border-top: 1px solid $clouds;
+  border-top: 2px solid $clouds;
 }
 
 a {
@@ -56,8 +56,10 @@ a {
 }
 
 .divider {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 50px 0;
+  @include desktop {
+    margin: 70px 0;
+  }
 }
 
 img {
@@ -227,13 +229,23 @@ footer {
   }
 }
 
+.entry-date {
+  margin-bottom: 10px;
+}
+
 .posts {
   @include j-column();
+  text-align: center;
 
   .archive-link {
     @include j-column();
     text-align: right;
   }
+
+  @include desktop {
+    text-align: left;
+  }
+
 }
 
 .post {
