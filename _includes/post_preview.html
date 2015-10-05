@@ -6,7 +6,7 @@
         {% if post.featured_image %}
         <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{site.baseurl}}/images/{{post.featured_image}}"></a>
         {% endif %}
-        {{ post.excerpt | strip_html | truncatewords: 20}}
+        <p>{{ post.excerpt | strip_html | truncatewords: 20}}</p>
         <a href="{{ site.baseurl }}{{ post.url }}">Läs Mer</a>
     </div>
 
