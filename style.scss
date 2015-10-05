@@ -35,7 +35,7 @@ hr {
 }
 
 a {
-  color: #3498db;
+  color: $belize-hole;
   text-decoration: inherit;
 
   &:hover {
@@ -43,7 +43,7 @@ a {
   }
 
   &:visited {
-    color: #3498db;
+    color: $belize-hole;
   }
 }
 
@@ -66,9 +66,10 @@ img {
 
 footer {
   @include j-column();
-  background: $clouds;
+  background: $turquoise;
   padding: 20px 0;
   font-size: 16px;
+  color: $white;
 
   .social-icons-container {
     text-align: center;
