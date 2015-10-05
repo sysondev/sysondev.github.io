@@ -152,6 +152,7 @@ footer {
 
 .container {
   @include j-column(22/24, 1/24);
+  margin-bottom: 30px;
   @include desktop {
     @include j-center(960px);
   }
