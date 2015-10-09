@@ -239,7 +239,14 @@ footer {
 
   .archive-link {
     @include j-column();
-    text-align: right;
+
+    @include desktop {
+      @include j-column(4/6, 1/6);
+    }
+
+    .button {
+      @include j-column(4/6, 1/6);
+    }
   }
 
   @include desktop {
@@ -280,7 +287,6 @@ footer {
 /* Wayra button from http://tympanus.net/Development/ButtonStylesInspiration/*/
 
 .button {
-  float: left;
   min-width: 150px;
   display: block;
   margin: 1em;
