@@ -9,7 +9,7 @@ featured_image: team/otto.jpg
 ---
 
 Vi kan inte säga annat än varmt välkommen till Syson, Otto Nordgren. Otto är en
-vass frontendutvecklare och för er som inte känner han så får ni här en kort intervju.
+vass frontendutvecklare och för er som inte känner honom så får ni här en kort intervju.
 <br><br>
 Det är lördag och klockan är 3 på eftermiddagen, vart hittar man troligtvis dig?
 <br>
