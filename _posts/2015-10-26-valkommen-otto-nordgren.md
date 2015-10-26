@@ -21,7 +21,7 @@ Atom och Vim!
 <br><br>
 Vad ser du mest fram emot just nu?
 <br>
-Efter en helg med tapas i barcelona är skall det bli härligt med jul!
+Efter en helg med tapas i Barcelona skall det bli härligt med jul!
 <br><br>
 
 ![Otto Nordgren]({{ site.baseurl }}/images/team/otto.jpg)
