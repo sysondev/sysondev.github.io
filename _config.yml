@@ -79,5 +79,3 @@ collections:
    team:
       output: true
 
-kramdown:  
-  parse_block_html: true
