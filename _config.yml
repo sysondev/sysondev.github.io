@@ -78,4 +78,7 @@ exclude:
 collections:
    team:
       output: true
+      
+kramdown:
+  input: GFM
 
