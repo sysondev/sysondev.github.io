@@ -14,6 +14,7 @@ avatar:
 #
 # Flags below are optional
 #
+markdown: kramdown
 
 # Includes an icon in the footer for each username you enter
 footer-links:
