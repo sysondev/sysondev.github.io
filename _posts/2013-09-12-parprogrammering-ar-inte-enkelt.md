@@ -29,11 +29,11 @@ Min poäng är inte att parprogrammering är viktigare än någon annan process,
 
 
 
-Men för att parprogrammering ska fungera så måste människor fungera tillsammans, man måste vara fokuserad,och det kan krävas att man sväljer sin stolthet.
+Men för att parprogrammering ska fungera så måste människor fungera tillsammans, man måste vara fokuserad, och det kan krävas att man sväljer sin stolthet.
 
 
 
-**Parprogrammering är inte enkelt** , och insikten om detta är oerhört viktig om man vill lyckas införa det.
+**Parprogrammering är inte enkelt**, och insikten om detta är oerhört viktig om man vill lyckas införa det.
 
 
 
