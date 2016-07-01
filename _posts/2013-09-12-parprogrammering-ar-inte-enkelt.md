@@ -65,7 +65,7 @@ Efter flitigt parprogrammerande på ett antal företag har jag märkt att vissa 
   4. **Ta många korta pauser.** Lämpligen vid varje förarbyte. Fem minuter att läsa mailboxen, hämta en ny kopp kaffe etc. Schemalagda, korta pauser leder till att tiden då man faktiskt programmerar blir distraktionsfri.
 
 	
-  5. **Parprogrammera inte hela dagen.** Parprogrammering är **mycket jobbigare **än att programmera ensam. Man håller sig konstant aktiv på ett helt annat sätt, genom att resonera kring lösningar, förklara och förstå. En bra grundregel är att om någon i paret känner sig trött så bryter man direkt.**
+  5. **Parprogrammera inte hela dagen.** Parprogrammering är **mycket jobbigare** än att programmera ensam. Man håller sig konstant aktiv på ett helt annat sätt, genom att resonera kring lösningar, förklara och förstå. En bra grundregel är att om någon i paret känner sig trött så bryter man direkt.
 **
 
 	
