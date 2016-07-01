@@ -72,7 +72,7 @@ Efter flitigt parprogrammerande på ett antal företag har jag märkt att vissa 
   6. **Kommentera aldrig enkla mistag på direkten**. Föraren kommer snabbt att inse att det stavas misstag och rätta det själv.
 
 	
-  7. **Berätta aldrig för föraren vilken kod han ska skriva.** Att ha någon som sitter och dikterar — _skriv var items = output.data, sen for item in items ....._ — är otroligt påfrestande. Istället bör ni resonera kring lösningen med varandra, och om navigatorn inte kan få fram sin mening med ord så är det bättre att han säger "Jag vet inte riktigt hur jag ska förklara det, kan jag visa vad jag menar?".
+  7. **Berätta aldrig för föraren vilken kod han eller hon ska skriva.** Att ha någon som sitter och dikterar — _skriv var items = output.data, sen for item in items ....._ — är otroligt påfrestande. Istället bör ni resonera kring lösningen med varandra, och om navigatorn inte kan få fram sin mening med ord så är det bättre att han eller hon säger "Jag vet inte riktigt hur jag ska förklara det, kan jag visa vad jag menar?".
 
 	
   8. **Var tålmodiga mot varandra.** Att parprogrammera kan göra att man känner sig blottad som person. Man blir stressad av tanken på att göra fel, och det leder ofta till att man börjar göra motsatsen till vad parprogrammeringen står för - man börjar cowboyhacka i godtycklig riktning. Om du som navigator märker att föraren är stressad är det din skyldighet att agera lugnande — _" Ta det lugnt, vi behöver inte skynda, ska vi fundera lite över hur vi ska gå framåt ?"_. Detta blir ofta särskilt tydligt när en senior utvecklare paras ihop med en mer junior, och då är det viktigt för den seniora utvecklaren att komma ihåg att parprogrammering är till för att stärka **hela** teamets kunskaper och effektivitet.
