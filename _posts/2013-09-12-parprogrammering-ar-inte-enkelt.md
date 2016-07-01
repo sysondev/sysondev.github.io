@@ -36,9 +36,6 @@ Men för att parprogrammering ska fungera så måste människor fungera tillsamm
 **Parprogrammering är inte enkelt** , och insikten om detta är oerhört viktig om man vill lyckas införa det.
 
 
-###  
-
-
 
 
 
