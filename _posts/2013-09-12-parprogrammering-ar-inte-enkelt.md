@@ -21,7 +21,7 @@ Parprogrammering är ett redskap för förbättrad effektivitet i utvecklingstea
 
 
 
-Samma team som kämpar i månader, eller kanske till och med år, med att få en ”Continuous integration” – miljö att fungera väl, skulle troligtvis lägga ned sina försök med parprogrammering efter bara några veckor. Jag tror det beror på att ”Continuous integration” uppfattas som något  _utmanande_ och _avancerat, något som när det är väl implementerat kan göra att ett utvecklingsteam känner _stolthet_ över sin prestation. Parprogrammering däremot uppfattas som något trivialt – det är ju bara att sätta sig ned två och två och börja koda!
+Samma team som kämpar i månader, eller kanske till och med år, med att få en ”Continuous integration” – miljö att fungera väl, skulle troligtvis lägga ned sina försök med parprogrammering efter bara några veckor. Jag tror det beror på att ”Continuous integration” uppfattas som något  _utmanande_ och _avancerat_, något som när det är väl implementerat kan göra att ett utvecklingsteam känner _stolthet_ över sin prestation. Parprogrammering däremot uppfattas som något trivialt – det är ju bara att sätta sig ned två och två och börja koda!
 
 
 
