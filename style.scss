@@ -28,6 +28,20 @@ h1 {
   font-size: 34px;
 }
 
+h4 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+ol, ul {
+    list-style: initial;
+    list-style-type: decimal;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
 hr {
   @include j-column();
   border: 0;
