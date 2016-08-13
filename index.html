@@ -51,7 +51,13 @@ layout: default
 <hr class="divider">
 
 <div class="instagram-posts">
+    <div class="grid">
+      <div class="grid-sizer"></div>
+    </div>
 </div>
+
+<script src="scripts/masonry.pkgd.min.js"></script>
+<script src="scripts/imagesloaded.pkgd.min.js"></script>
 
 <script>
     var script = document.createElement('script');
@@ -62,17 +68,28 @@ layout: default
     function handler(response)
     {
         response.data.forEach(function(post, i){
-            if(i >= 15) {
+            if(i >= 30) {
                 return;
             }
             var imageContainer = document.createElement('a');
             imageContainer.setAttribute('href', post.link);
             imageContainer.setAttribute('target', '_blank');
-            imageContainer.classList.add('instagram-post');
+            imageContainer.classList.add('grid-item');
             var image = document.createElement('img');
             image.setAttribute('src', post.images.standard_resolution.url);
             imageContainer.appendChild(image);
-            document.getElementsByClassName('instagram-posts')[0].appendChild(imageContainer);
+            document.getElementsByClassName('grid')[0].appendChild(imageContainer);
         });
+
+        var grid = document.querySelector('.grid');
+        var msnry = new Masonry( grid, {
+          itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer',
+          percentPosition: true
+        });
+
+        imagesLoaded( grid, function( instance ) {
+            msnry.layout();
+          });
     }
 </script>
