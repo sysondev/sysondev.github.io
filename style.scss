@@ -256,10 +256,6 @@ footer {
   }
 }
 
-.column {
-  @include j-column();
-}
-
 .entry {
   img {
     margin-bottom: 20px;
