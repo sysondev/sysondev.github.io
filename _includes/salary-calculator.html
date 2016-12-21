@@ -1,0 +1,22 @@
+<div class="salary-calculator">
+	<p>Vår lönemodell är simpel: du får 70% av det du drar in när du har uppdrag, 26 000 när du inte har ett uppdrag.</p>
+	<h1><label>Timpris: <input id="hourlyRate" type="number" pattern="\d*" value="800" onchange="displaySalary(event.target.valueAsNumber)"/></label></h1>
+	<h1>Lön: <span id="salary"></span> kr</h1>
+	<h1>Utan uppdrag: 26000 kr</h1>
+
+	<script>
+		var hourlyRateInput = document.getElementById('hourlyRate');
+		var salary = document.getElementById('salary');
+
+		window.displaySalary = function (hourlyRate) {
+			 salary.innerHTML = Math.floor(calculateSalary(hourlyRate))
+		}
+
+		function calculateSalary(hourlyRate) {
+			return ((250/12-(0/12))-(2,5))*(hourlyRate*8*0.7/1.3142)-2600*1.2426-0;
+		}
+
+		displaySalary(hourlyRateInput.value);
+
+	</script>
+</div>
