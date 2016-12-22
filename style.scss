@@ -69,6 +69,12 @@ a {
   }
 }
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .underline {
   text-decoration: underline;
 }
@@ -175,6 +181,7 @@ footer {
 }
 
 .container {
+  flex: 1;
   @include j-column(22/24, 1/24);
   margin-bottom: 30px;
   @include desktop {
