@@ -69,6 +69,12 @@ a {
   }
 }
 
+code {
+  background-color: $clouds;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 .site {
   display: flex;
   min-height: 100vh;

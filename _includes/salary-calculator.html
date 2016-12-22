@@ -1,8 +1,11 @@
 <div class="salary-calculator">
-	<p>Vår lönemodell är enkel: du får 70% av det du drar in när du har ett uppdrag, 26 000 när du inte har ett uppdrag.</p>
+	<p>Vår lönemodell är enkel: du får 70% av det du drar in när du har ett uppdrag, 26000:- när du inte har ett uppdrag. I övrigt har vi 30 dagars semester och betalda konferenser. ⛷🏖</p>
+	<br>
 	<h1><label>Timpris: <input id="hourlyRate" type="number" pattern="\d*" value="800" onchange="displaySalary(event.target.valueAsNumber)"/></label></h1>
-	<h1>Lön: <span id="salary"></span> kr</h1>
-	<h1>Utan uppdrag: 26000 kr</h1>
+	<h1>Lön: <span id="salary"></span>:-</h1>
+	<h1>Utan uppdrag: 26000:-</h1>
+	<br>
+	<a href="{{ site.baseurl }}/lonemodell-forklarad/">Hur vi räknat</a>
 
 	<script>
 		var hourlyRateInput = document.getElementById('hourlyRate');
