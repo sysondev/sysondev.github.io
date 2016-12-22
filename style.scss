@@ -103,6 +103,10 @@ footer {
 
   .social-icons-container {
     text-align: center;
+
+    a {
+      float: none !important; //overrides addthis-styles
+    }
   }
 
   .container:last-child {
