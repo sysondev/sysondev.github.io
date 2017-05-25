@@ -188,6 +188,7 @@ footer {
   margin-bottom: 30px;
   @include desktop {
     @include j-center(960px);
+    width: 100%;
   }
 }
 
