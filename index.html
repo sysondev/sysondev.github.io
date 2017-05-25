@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="company-description">
-  <p>Vi är ett gäng konsulter i Stockholm, duktiga inom systemutveckling och systemtest.</p>
+  <p>Hej!👋 Vi är ett gäng konsulter i Stockholm, duktiga inom systemutveckling och systemtest.</p>
 </div>
 <div class="team_members">
   {% assign count = 0 %}
@@ -15,7 +15,7 @@ layout: default
                 <img src="images/team/{{team_member.image}}">
             </div>
         </div>
-      <h1 class="name">{{ team_member.name }}</h1>
+      <h2 class="name">{{ team_member.name }}</h2>
       {% if team_member.cv_link %}
         <a href="{{team_member.cv_link}}" target="_blank">Visa Profil</a>
       {% endif %}
@@ -29,6 +29,45 @@ layout: default
 </div>
 
 <hr class="divider">
+
+<div class="salary-teaser">
+    <h1>Lönemodell</h1>
+    <div class="salary-calculator">
+        <p>Vår lönemodell är enkel: du får 70% av det du drar in när du har ett uppdrag, 26000:- när du inte har ett uppdrag. I övrigt har vi 30 dagars semester och åker ofta på konferenser. ⛷🏖</p>
+        <br>
+        <h2><label>Timpris: <input id="hourlyRate" type="number" pattern="\d*" value="800" onchange="displaySalary(event.target.valueAsNumber)"/></label></h2>
+        <h2>Lön: <span id="salary"></span>:-</h2>
+        <h2>Utan uppdrag: 26000:-</h2>
+        <br>
+        <p>Månadslönen är uträknad med 160 timmar i månaden och 2600 kr i pension. Givetvis kan man själv välja hur man vill fördela mellan lön, pension, eventuell tjänstebil med mera.</p>
+
+        <script>
+            var hourlyRateInput = document.getElementById('hourlyRate');
+            var salary = document.getElementById('salary');
+
+            window.displaySalary = function (hourlyRate) {
+                if(hourlyRate > 0) {
+                    salary.innerHTML = Math.floor(calculateSalary(hourlyRate))
+                } else {
+                    salary.innerHTML = '😑';
+                }
+            };
+
+            function calculateSalary(hourlyRate) {
+                return (((160-2.5*8)*hourlyRate*0.7)/1.3142)-2600*1.2426;
+            }
+
+            displaySalary(hourlyRateInput.value);
+
+        </script>
+    </div>
+</div>
+
+<hr class="divider">
+
+<div class="instagram-headline">
+    <h1>Följ oss på Instagram <a href="http://instagram.com/syson.se">@syson.se</a></h1>
+</div>
 
 <script src="scripts/masonry.pkgd.min.js"></script>
 <script src="scripts/imagesloaded.pkgd.min.js"></script>
