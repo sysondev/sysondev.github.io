@@ -71,6 +71,10 @@ code {
   word-wrap: break-word;
 }
 
+.guttered-bottom {
+  margin-bottom: 20px;
+}
+
 .site {
   display: flex;
   min-height: 100vh;
@@ -90,10 +94,6 @@ code {
   @include desktop {
     margin: 70px 0;
   }
-}
-
-img {
-  max-width: 100%;
 }
 
 footer {
@@ -220,6 +220,23 @@ footer {
         width:100%;
       }
     }
+  }
+
+}
+
+.companies {
+  text-align: center;
+  @include j-column();
+}
+
+.company-logotype {
+  @include desktop {
+    @include j-column(1/2, $cycle: 2);
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 150px;
   }
 
 }
