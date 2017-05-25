@@ -50,7 +50,6 @@ layout: default
         <br>
         <h2><label>Timpris: <input id="hourlyRate" type="number" pattern="\d*" value="800" onchange="displaySalary(event.target.valueAsNumber)"/></label></h2>
         <h2>Lön: <span id="salary"></span>:-</h2>
-        <h2>Utan uppdrag: 26000:-</h2>
         <br>
         <p>Månadslönen är uträknad med 160 timmar i månaden och 2600 kr i pension. Givetvis kan man själv välja hur man vill fördela mellan lön, pension, eventuell tjänstebil med mera.</p>
 
@@ -59,10 +58,10 @@ layout: default
             var salary = document.getElementById('salary');
 
             window.displaySalary = function (hourlyRate) {
-                if(hourlyRate > 0) {
+                if(calculateSalary(hourlyRate) > 26000) {
                     salary.innerHTML = Math.floor(calculateSalary(hourlyRate))
                 } else {
-                    salary.innerHTML = '😑';
+                    salary.innerHTML = '26000';
                 }
             };
 
