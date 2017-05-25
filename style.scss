@@ -156,32 +156,6 @@ footer {
   }
 }
 
-.landing {
-  background-image: url('/images/IMG_5648.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 800px;
-}
-
-.landing-text {
-  color: white;
-  padding: 10px;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  text-align: center;
-  background-color: rgba(0,0,0,0.5);
-  @include desktop {
-    top: 30%;
-  }
-}
-
-.global-header {
-  opacity: 1;
-}
-
 .container {
   flex: 1;
   @include j-column(22/24, 1/24);
@@ -244,57 +218,6 @@ footer {
     }
   }
 
-}
-
-.entry {
-  img {
-    margin-bottom: 20px;
-  }
-}
-
-.entry-date {
-  margin-bottom: 10px;
-}
-
-.posts {
-  @include j-column();
-  text-align: center;
-
-  .archive-link {
-    @include j-column();
-
-    @include desktop {
-      @include j-column(4/6, 1/6);
-    }
-
-    .button {
-      @include j-column(4/6, 1/6);
-    }
-  }
-
-  @include desktop {
-    text-align: left;
-  }
-
-}
-
-.post {
-  @include j-column();
-  margin-bottom: 40px;
-
-  @include tablet {
-    @include j-column(1/2, $cycle: 2);
-  }
-
-  @include desktop {
-    @include j-column(1/3, $cycle: 3);
-  }
-
-  h1 {
-    a {
-      color: inherit;
-    }
-  }
 }
 
 .instagram-posts {
