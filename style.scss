@@ -57,16 +57,8 @@ hr {
 }
 
 a {
-  color: $belize-hole;
-  text-decoration: inherit;
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-  &:visited {
-    color: $belize-hole;
-  }
+  color: $midnight-blue;
+  text-decoration: underline;
 }
 
 code {
@@ -218,6 +210,7 @@ footer {
 }
 .team-member {
   margin-bottom: 20px;
+  text-align: center;
   @include j-column();
 
   @include tablet {
@@ -226,14 +219,6 @@ footer {
 
   @include desktop {
     @include j-column(1/3, $cycle: 3);
-  }
-
-  .name {
-    text-align: center;
-  }
-
-  .button {
-    @include j-column(4/6, 1/6);
   }
 
   .quote {
