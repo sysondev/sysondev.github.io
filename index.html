@@ -6,9 +6,10 @@ layout: default
   <p>Vi är ett gäng konsulter i Stockholm, duktiga inom systemutveckling och systemtest. <a href="{{ site.baseurl }}/om/">Läs mer</a></p>
 </div>
 <div class="team_members">
+  {% assign count = 0 %}
   {% for team_member in site.team reversed %}
-
-    <div class="team-member">
+    {% assign count = count | plus: 1 %}
+    <div class="team-member {% if count > 3 %} hidden {% endif %}">
         <div class="image-container">
             <div class="image-placeholder">
                 <img src="images/team/{{team_member.image}}">
@@ -23,6 +24,10 @@ layout: default
   {% endfor %}
 </div>
 
+<div class="show-all-btn-container">
+    <button id="show-all-btn" class="button button--wayra">Visa alla</button>
+</div>
+
 <hr class="divider">
 
 <div class="instagram-posts">
@@ -35,6 +40,17 @@ layout: default
 <script src="scripts/imagesloaded.pkgd.min.js"></script>
 
 <script>
+    //show-all-button
+    var showAllBtn = document.getElementById('show-all-btn');
+    showAllBtn.addEventListener('click', function() {
+       var teamMembers = [].slice.call(document.getElementsByClassName('team-member'));
+       teamMembers.forEach(function(teamMember) {
+           teamMember.classList.remove('hidden');
+       });
+       showAllBtn.classList.add('hidden');
+    });
+
+    //Instagram fetching
     var script = document.createElement('script');
     script.src = 'https://api.instagram.com/v1/users/1805388781/media/recent/?access_token=1805388781.6f84264.ba97662b8d0240579d138931a4d06671&callback=handler';
 
