@@ -221,11 +221,6 @@ footer {
     @include j-column(1/3, $cycle: 3);
   }
 
-  .quote {
-    @include j-column();
-    text-align: center;
-  }
-
   .image-container {
     @include j-column(6/8, 1/8);
 
@@ -248,15 +243,6 @@ footer {
     }
   }
 
-}
-
-.team-page {
-
-  iframe {
-    @include j-center(550px);
-    height: 7000px;
-    width: 100%;
-  }
 }
 
 .entry {
