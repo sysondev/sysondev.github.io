@@ -45,15 +45,15 @@ layout: default
 
 <div class="salary-teaser">
     <h1 class="center guttered-bottom">Lönemodell</h1>
-        <p>Vår lönemodell är enkel: du får 70% av det du drar in när du har ett uppdrag, 26000:- när du inte har ett uppdrag. I övrigt har vi 30 dagars semester och åker på konferens två gånger om året. ⛷🏖</p>
+        <p>Vår lönemodell är enkel: du får 70% av det du drar in när du har ett uppdrag, 26 000 kr när du inte har ett uppdrag. I övrigt har vi 30 dagars semester och åker på konferens två gånger om året. ⛷🏖</p>
 
         <div class="salary-calculator">
             <h2><input id="hourlyRateInput" type="range" min="500" max="1100" step="10" oninput="displaySalary(event.target.valueAsNumber)"/></h2>
-            <h2>Timpris: <span id="hourlyRateDisplay"></span></h2>
-            <h2>Lön: <span id="salary"></span></h2>
+            <h2>Timpris: <span id="hourlyRateDisplay"></span> kr</h2>
+            <h2>Lön: <span id="salary"></span> kr</h2>
         </div>
 
-        <p>Månadslönen är uträknad med 160 timmar i månaden och 2600 kr i pension. Givetvis kan man själv välja hur man vill fördela mellan lön, pension, eventuell tjänstebil med mera.</p>
+        <p>Månadslönen är uträknad med 160 timmar i månaden och 2 600 kr i pension. Givetvis kan man själv välja hur man vill fördela mellan lön, pension, eventuell tjänstebil med mera.</p>
 
         <script>
             var hourlyRateInput = document.getElementById('hourlyRateInput');
@@ -62,15 +62,16 @@ layout: default
 
             window.displaySalary = function (hourlyRate) {
                 hourlyRateDisplay.innerHTML = hourlyRate;
-                if(calculateSalary(hourlyRate) > 26000) {
-                    salary.innerHTML = Math.floor(calculateSalary(hourlyRate))
-                } else {
-                    salary.innerHTML = '26000';
-                }
+                salary.innerHTML = numberWithCommas(Math.floor(calculateSalary(hourlyRate)));
+
             };
 
             function calculateSalary(hourlyRate) {
                 return (((160-2.5*8)*hourlyRate*0.7)/1.3142)-2600*1.2426;
+            }
+
+            function numberWithCommas(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
             }
 
             displaySalary(hourlyRateInput.value);
