@@ -89,10 +89,6 @@ code {
   text-decoration: underline;
 }
 
-.center {
-  text-align: center;
-}
-
 .divider {
   margin: 50px 0;
   @include desktop {
@@ -274,7 +270,8 @@ footer {
 }
 
 .instagram-posts {
-  @include j-column();
+  @include j-center(1920px);
+  width: 100%;
   margin-bottom: 30px;
 }
 
