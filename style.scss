@@ -176,9 +176,6 @@ footer {
   background-color: $clouds;
   text-align: center;
   p {
-    margin-bottom: 12px;
-  }
-  p.last {
     margin-bottom: 0px;
   }
   @include j-column();
