@@ -272,6 +272,10 @@ footer {
   margin-bottom: 30px;
 }
 
+#hourlyRateInput {
+  max-width: 300px;
+}
+
 /* clear fix */
 .grid:after {
   content: '';
@@ -300,6 +304,95 @@ footer {
   display: block;
   max-width: 100%;
 }
+
+//range slider
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 6.2px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 13.6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 0px;
+  border: 1.3px solid #1abc9c;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #1abc9c;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.78);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 13.6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 0px;
+  border: 1.3px solid #1abc9c;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #1abc9c;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 13.6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(189, 189, 189, 0.78);
+  border: 1.3px solid #1abc9c;
+  border-radius: 0px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1.3px solid #1abc9c;
+  border-radius: 0px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 0px solid rgba(0, 0, 0, 0);
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #1abc9c;
+  cursor: pointer;
+  height: 13.6px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(255, 255, 255, 0.78);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+
 
 /* Wayra button from http://tympanus.net/Development/ButtonStylesInspiration/*/
 

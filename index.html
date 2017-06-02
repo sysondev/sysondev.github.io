@@ -48,16 +48,19 @@ layout: default
     <div class="salary-calculator">
         <p>Vår lönemodell är enkel: du får 70% av det du drar in när du har ett uppdrag, 26000:- när du inte har ett uppdrag. I övrigt har vi 30 dagars semester och åker på konferens två gånger om året. ⛷🏖</p>
         <br>
-        <h2><label>Timpris: <input id="hourlyRate" type="number" pattern="\d*" value="800" onchange="displaySalary(event.target.valueAsNumber)"/></label></h2>
-        <h2>Lön: <span id="salary"></span>:-</h2>
+        <h2><input id="hourlyRateInput" type="range" min="500" max="1100" step="10" oninput="displaySalary(event.target.valueAsNumber)"/></h2>
+        <h2>Timpris: <span id="hourlyRateDisplay"></span></h2>
+        <h2>Lön: <span id="salary"></span></h2>
         <br>
         <p>Månadslönen är uträknad med 160 timmar i månaden och 2600 kr i pension. Givetvis kan man själv välja hur man vill fördela mellan lön, pension, eventuell tjänstebil med mera.</p>
 
         <script>
-            var hourlyRateInput = document.getElementById('hourlyRate');
+            var hourlyRateInput = document.getElementById('hourlyRateInput');
             var salary = document.getElementById('salary');
+            var hourlyRateDisplay = document.getElementById('hourlyRateDisplay');
 
             window.displaySalary = function (hourlyRate) {
+                hourlyRateDisplay.innerHTML = hourlyRate;
                 if(calculateSalary(hourlyRate) > 26000) {
                     salary.innerHTML = Math.floor(calculateSalary(hourlyRate))
                 } else {
