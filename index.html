@@ -45,13 +45,14 @@ layout: default
 
 <div class="salary-teaser">
     <h1 class="center guttered-bottom">Lönemodell</h1>
-    <div class="salary-calculator">
         <p>Vår lönemodell är enkel: du får 70% av det du drar in när du har ett uppdrag, 26000:- när du inte har ett uppdrag. I övrigt har vi 30 dagars semester och åker på konferens två gånger om året. ⛷🏖</p>
-        <br>
-        <h2><input id="hourlyRateInput" type="range" min="500" max="1100" step="10" oninput="displaySalary(event.target.valueAsNumber)"/></h2>
-        <h2>Timpris: <span id="hourlyRateDisplay"></span></h2>
-        <h2>Lön: <span id="salary"></span></h2>
-        <br>
+
+        <div class="salary-calculator">
+            <h2><input id="hourlyRateInput" type="range" min="500" max="1100" step="10" oninput="displaySalary(event.target.valueAsNumber)"/></h2>
+            <h2>Timpris: <span id="hourlyRateDisplay"></span></h2>
+            <h2>Lön: <span id="salary"></span></h2>
+        </div>
+
         <p>Månadslönen är uträknad med 160 timmar i månaden och 2600 kr i pension. Givetvis kan man själv välja hur man vill fördela mellan lön, pension, eventuell tjänstebil med mera.</p>
 
         <script>
@@ -75,7 +76,6 @@ layout: default
             displaySalary(hourlyRateInput.value);
 
         </script>
-    </div>
 </div>
 
 <hr class="divider">
