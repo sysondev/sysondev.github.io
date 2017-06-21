@@ -321,36 +321,36 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 14px;
   cursor: pointer;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  background: rgba(255, 255, 255, 0.78);
+  background: #ecf0f1;
   border-radius: 25px;
-  border: 0.5px solid #1abc9c;
+  border: 0px solid #010101;
 }
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #000031, 0px 0px 0px #00004b;
-  border: 0px solid #00001e;
+  box-shadow: 0px 0px px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
   height: 30px;
   width: 30px;
   border-radius: 30px;
   background: #1abc9c;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -8.5px;
+  margin-top: -8px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: rgba(255, 255, 255, 0.78);
+  background: #ecf0f1;
 }
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 14px;
   cursor: pointer;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  background: rgba(255, 255, 255, 0.78);
+  background: #ecf0f1;
   border-radius: 25px;
-  border: 0.5px solid #1abc9c;
+  border: 0px solid #010101;
 }
 input[type=range]::-moz-range-thumb {
-  box-shadow: 0px 0px 0px #000031, 0px 0px 0px #00004b;
-  border: 0px solid #00001e;
+  box-shadow: 0px 0px px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
   height: 30px;
   width: 30px;
   border-radius: 30px;
@@ -366,20 +366,20 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 input[type=range]::-ms-fill-lower {
-  background: rgba(242, 242, 242, 0.78);
-  border: 0.5px solid #1abc9c;
+  background: #ecf0f1;
+  border: 0px solid #010101;
   border-radius: 50px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
 input[type=range]::-ms-fill-upper {
-  background: rgba(255, 255, 255, 0.78);
-  border: 0.5px solid #1abc9c;
+  background: #ecf0f1;
+  border: 0px solid #010101;
   border-radius: 50px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
 input[type=range]::-ms-thumb {
-  box-shadow: 0px 0px 0px #000031, 0px 0px 0px #00004b;
-  border: 0px solid #00001e;
+  box-shadow: 0px 0px px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
   height: 30px;
   width: 30px;
   border-radius: 30px;
@@ -388,11 +388,12 @@ input[type=range]::-ms-thumb {
   height: 14px;
 }
 input[type=range]:focus::-ms-fill-lower {
-  background: rgba(255, 255, 255, 0.78);
+  background: #ecf0f1;
 }
 input[type=range]:focus::-ms-fill-upper {
-  background: rgba(255, 255, 255, 0.78);
+  background: #ecf0f1;
 }
+
 
 
 
