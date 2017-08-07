@@ -18,27 +18,29 @@ It's a little trick picked up over the years that makes visualizing the structur
 
 
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.4;
   color: $midnight-blue;
 }
 
 h1 {
   font-size: 34px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 26px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 23px;
-}
-
-h4 {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: $turquoise;
 }
 
 ol, ul {
@@ -153,6 +155,7 @@ footer {
   font-size: 50px;
   letter-spacing: 2px;
   margin-bottom: 20px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
   @include desktop {
     font-size: 70px;
@@ -203,6 +206,7 @@ footer {
 
   .image-container {
     @include j-column(6/8, 1/8);
+    margin-bottom: 10px;
 
     .image-placeholder {
       //hack to make the images take up space before they are loaded, see
