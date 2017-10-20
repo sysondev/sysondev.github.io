@@ -57,13 +57,25 @@ layout: default
 
         <script>
             var hourlyRateInput = document.getElementById('hourlyRateInput');
-            var salary = document.getElementById('salary');
+            var salaryElement = document.getElementById('salary');
             var hourlyRateDisplay = document.getElementById('hourlyRateDisplay');
+            var sendToGA = debounce(function(salary) {
+                console.log('send to ga', salary);
+                window.ga('send', {
+                    hitType: 'event',
+                    eventCategory: 'Salary Slider',
+                    eventAction: 'drag',
+                    eventValue: salary
+                });
+            }, 1000);
 
-            window.displaySalary = function (hourlyRate) {
+            window.displaySalary = function (hourlyRate, initialPageLoad) {
                 hourlyRateDisplay.innerHTML = hourlyRate;
-                salary.innerHTML = numberWithCommas(Math.floor(calculateSalary(hourlyRate)));
-
+                var salary = Math.floor(calculateSalary(hourlyRate));
+                salaryElement.innerHTML = numberWithCommas(salary);
+                if(!initialPageLoad) {
+                    sendToGA(salary)
+                }
             };
 
             function calculateSalary(hourlyRate) {
@@ -74,7 +86,22 @@ layout: default
                 return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
             }
 
-            displaySalary(hourlyRateInput.value);
+            function debounce(func, wait, immediate) {
+            	var timeout;
+            	return function() {
+            		var context = this, args = arguments;
+            		var later = function() {
+            			timeout = null;
+            			if (!immediate) func.apply(context, args);
+            		};
+            		var callNow = immediate && !timeout;
+            		clearTimeout(timeout);
+            		timeout = setTimeout(later, wait);
+            		if (callNow) func.apply(context, args);
+            	};
+            };
+
+            displaySalary(hourlyRateInput.value, true);
 
         </script>
 </div>
