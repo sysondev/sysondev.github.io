@@ -60,10 +60,9 @@ layout: default
             var salaryElement = document.getElementById('salary');
             var hourlyRateDisplay = document.getElementById('hourlyRateDisplay');
             var sendToGA = debounce(function(salary) {
-                console.log('send to ga', salary);
                 window.ga('send', {
                     hitType: 'event',
-                    eventCategory: 'Salary Slider',
+                    eventCategory: 'salary-slider',
                     eventAction: 'drag',
                     eventValue: salary
                 });
@@ -74,7 +73,7 @@ layout: default
                 var salary = Math.floor(calculateSalary(hourlyRate));
                 salaryElement.innerHTML = numberWithCommas(salary);
                 if(!initialPageLoad) {
-                    sendToGA(salary)
+                    sendToGA(hourlyRate);
                 }
             };
 
