@@ -149,23 +149,13 @@ footer {
   background: $turquoise;
 }
 
-.logo {
+.logo-container {
   text-align: center;
-  color: $turquoise;
-  font-size: 50px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
   margin-top: 10px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 
-  @include desktop {
-    font-size: 70px;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: inherit;
-  }
+.logo {
+  width: 350px;
 }
 
 .container {
@@ -347,7 +337,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 30px;
   width: 30px;
   border-radius: 30px;
-  background: #1abc9c;
+  background: #59b89d;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -8px;
@@ -370,7 +360,7 @@ input[type=range]::-moz-range-thumb {
   height: 30px;
   width: 30px;
   border-radius: 30px;
-  background: #1abc9c;
+  background: #59b89d;
   cursor: pointer;
 }
 input[type=range]::-ms-track {
@@ -399,7 +389,7 @@ input[type=range]::-ms-thumb {
   height: 30px;
   width: 30px;
   border-radius: 30px;
-  background: #1abc9c;
+  background: #59b89d;
   cursor: pointer;
   height: 14px;
 }
